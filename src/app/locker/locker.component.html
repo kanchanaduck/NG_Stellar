@@ -1,0 +1,59 @@
+<div class="card">
+  <div class="card-header">
+    Locker Management System
+  </div>
+  <div class="card-body">
+
+    <div class="col-4 offset-4">
+      <div class="form-group">
+        <label for="exampleSelectGender">Room No.</label>
+        <select class="form-control" id="exampleSelectGender">
+          <option>R01</option>
+          <option>R02</option>
+        </select>
+      </div>
+    </div>
+
+    <table class="table table-responsive table-sm">
+      <thead>
+        <tr>
+          <th>Lock no</th>
+          <th>Sex</th>
+          <th>Emp no</th>
+          <th>Name</th>
+          <th>Dept</th>
+          <th>Entr date</th>
+          <th>Resign</th>
+          <th>Category</th>
+          <th>Return key</th>
+          <th>Upd date</th>
+          <th>Remark</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let package of packages">
+          <td><input type="text" class="form-control form-control-sm" value="{{ package.lock_no }}"></td>
+          <td><input type="text" class="form-control form-control-sm" value="{{ package.sex }}"></td>
+          <td><input type="text" class="form-control form-control-sm" value="{{ package.emp_no }}"></td>
+          <td><input type="text" class="form-control form-control-sm" value="{{ package.name }}"></td>
+          <td><input type="text" class="form-control form-control-sm" value="{{ package.dept }}"></td>
+          <td><input type="text" class="form-control form-control-sm" value="{{ package.entr_date }}"></td>
+          <td><input type="text" class="form-control form-control-sm" value="{{ package.resign }}"></td>
+          <td><input type="text" class="form-control form-control-sm" value="{{ package.category }}"></td>
+          <td><input type="text" class="form-control form-control-sm" value="{{ package.return_key }}"></td>
+          <td><input type="text" class="form-control form-control-sm" value="{{ package.upd_date }}"></td>
+          <td><input type="text" class="form-control form-control-sm" value="{{ package.remark }}"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card mt-3">
+  <div class="card-header">
+    Add locker
+  </div>
+  <div class="card-body">
+    
+  </div>
+</div>
